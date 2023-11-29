@@ -4,10 +4,11 @@ import { Decal, useTexture, OrbitControls } from "@react-three/drei";
 import { degToRad } from "three/src/math/MathUtils";
 
 function Cylinder3d(props) {
-  const speed = 0.0017;
   const ref = useRef();
+  // set the rotation speed here⏩
+  const speed = 0.0017;
 
-  const [hovered, hover] = useState(false);
+  // const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
   const [stopped, stop] = useState(speed);
 
@@ -16,7 +17,10 @@ function Cylinder3d(props) {
     // ref.current.rotation.x += 0.01
     ref.current.rotation.y += stopped;
   });
-  // Return the view, these are regular Threejs elements expressed in JSX
+// iterate over the array from props 12 times and create an array of textures
+
+
+
 
   const texture = useTexture("/images/cyberpunk-city-7415576_1280.jpg");
   const texture1 = useTexture("/images/dreaming-7415565_1280.jpg");

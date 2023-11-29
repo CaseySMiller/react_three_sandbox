@@ -1,25 +1,26 @@
 //this is designed to take 16:9 images like 1280x720 in an arry of 3, 6, or 12
 import "./App.css";
-import { Canvas, } from "@react-three/fiber";
 
-import Cylinder3d from "./components/Cylinder3d";
+import ThreeJsCarousel from "./components/ThreeJsCarousel/ThreeJsCarousel";
 
-const imgArr = ["uri","uri","uri",];
 
 function App() {
+  const imgArr = [
+    "/images/cyberpunk-city-7415576_1280.jpg",
+    "/images/dreaming-7415565_1280.jpg",
+    "/images/northern-7415567_1280.jpg",
+    "/images/studio-ghibli-7415572_1280.jpg",
+    "/images/wallpaper-7415568_1280.jpg",
+    "/images/wallpaper-7415571_1280.jpg",
+  ];
+
   return (
-    <>
-      <section className="fullSize">
-        <Canvas camera={{ fov: 75, position: [0, 4, 40],  }}>
-        {/* <axesHelper args={[30, 30, 30]} /> */}
-          <pointLight position={[5, 4.5, 35]} intensity={250} />
-          <directionalLight position={[15, 8, 30]} intensity={.8} />
-          {/* <ambientLight intensity={1} /> */}
-          <Cylinder3d position={[0, 2, 0]} array={imgArr}/>
-        </Canvas>
-      </section>
-    </>
+    <section className="fullSize">
+      <ThreeJsCarousel imgArr={imgArr} />
+    </section>
   );
 }
 
 export default App;
+
+// to use this copy the folder "ThreeJsCarousel" into your project

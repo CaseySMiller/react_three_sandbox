@@ -38,8 +38,11 @@ function Cylinder3d(props) {
       <mesh
         {...props}
         ref={ref}
-        // scale={clicked ? 1.5 : 1}
-        onClick={(e) => stop(!stopped ? speed : 0)}
+        scale={clicked ? 1.01 : 1}
+        onClick={(e) => {
+          stop(!stopped ? speed : 0);
+          click(!clicked);
+        }}
       >
         <cylinderGeometry args={[30.9, 30.9, 9, 12, undefined, false]} />
         <meshNormalMaterial wireframe={props.wireframe} color={"#b7b7b7"} />

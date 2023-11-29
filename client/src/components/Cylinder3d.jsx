@@ -53,7 +53,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(15), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture}
             polygonOffset
             polygonOffsetFactor={-1} // The material should take precedence over the original
@@ -65,7 +65,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(45), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture1}
             polygonOffset
             polygonOffsetFactor={-2} // The material should take precedence over the original
@@ -77,7 +77,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(75), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture2}
             polygonOffset
             polygonOffsetFactor={-3} // The material should take precedence over the original
@@ -89,7 +89,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(105), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture3}
             polygonOffset
             polygonOffsetFactor={-4} // The material should take precedence over the original
@@ -101,7 +101,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(135), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture4}
             polygonOffset
             polygonOffsetFactor={-5} // The material should take precedence over the original
@@ -113,7 +113,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(165), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture5}
             polygonOffset
             polygonOffsetFactor={-6} // The material should take precedence over the original
@@ -125,7 +125,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(195), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture6}
             polygonOffset
             polygonOffsetFactor={-7} // The material should take precedence over the original
@@ -137,7 +137,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(225), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16.04, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture7}
             polygonOffset
             polygonOffsetFactor={-8} // The material should take precedence over the original
@@ -149,7 +149,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(255), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16.04, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture8}
             polygonOffset
             polygonOffsetFactor={-8} // The material should take precedence over the original
@@ -161,7 +161,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(285), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16.04, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture9}
             polygonOffset
             polygonOffsetFactor={-9} // The material should take precedence over the original
@@ -173,7 +173,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(315), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16.04, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture10}
             polygonOffset
             polygonOffsetFactor={-10} // The material should take precedence over the original
@@ -185,7 +185,7 @@ function Cylinder3d(props) {
           rotation={[0, degToRad(345), 0]} // Rotation of the decal (can be a vector or a degree in radians)
           scale={[16, 9, 7]} // Scale of the decal
         >
-          <meshBasicMaterial
+          <meshPhysicalMaterial
             map={texture11}
             polygonOffset
             polygonOffsetFactor={-11} // The material should take precedence over the original

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
+import { MeshNormalMaterial } from "three";
  
 function Cylinder3d(props) {
   // This reference gives us direct access to the THREE.Mesh object
@@ -8,19 +9,22 @@ function Cylinder3d(props) {
   const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (ref.current.rotation.x += 0.01));
+  useFrame((state, delta) => {
+    // ref.current.rotation.x += 0.01 
+    ref.current.rotation.y += 0.0015
+  });
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <mesh
       {...props}
       ref={ref}
       scale={clicked ? 1.5 : 1}
-      onClick={(event) => click(!clicked)}
-      onPointerOver={(event) => hover(true)}
-      onPointerOut={(event) => hover(false)}
+      // onClick={(event) => click(!clicked)}
+      // onPointerOver={(event) => hover(true)}
+      // onPointerOut={(event) => hover(false)}
     >
-      <cylinderGeometry args={[0, 2, 5]} />
-      <meshStandardMaterial
+      <cylinderGeometry args={[30.9, 30.9, 9, 12, undefined, false,]} />
+      <meshPhysicalMaterial
         wireframe={props.wireframe}
         color={hovered ? "hotpink" : "orange"}
       />
